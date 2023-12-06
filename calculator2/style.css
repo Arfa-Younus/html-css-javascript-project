@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #0f0a0a;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+#display{
+    
+margin: 3% 0% 0% 35%;
+    width: 370px;
+    height: 500px;
+    /* background-color: yellow; */
+    border-image-source: url(border\ image.png);
+    border-image-slice:59 74 52 74;
+    border-image-width: 45px 45px 45px 45px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+    border-style: solid;
+    text-align: center;
+
+}
+#show{
+    margin-top: 15%;
+    margin-bottom: 4%;
+    width: 270px;
+    height: 43px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+	text-align: right;
+    outline: none;
+    
+}
+
+.btn{
+    width: 53px;
+    height: 50px;
+    margin: 2%;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+background-color: rgb(207, 205, 205);
+}
+
+.btn:hover{
+    border: 2px solid #0072ff;
+
+
+}
+
+#sym{
+    background-color: #18191f;
+    color: white;
+}
+
+#equal{
+	background-color:  #79818e;
+	color: rgb(0, 0, 0);
+	font-size: 23px;
+}
+
+.wrapper span {
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #18191f;
+	box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+	animation: animate 10s linear infinite;
+}
+.wrapper span:nth-child(1) {
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2) {
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.wrapper span:nth-child(3) {
+	left: 20%;
+	animation-delay: 2s;
+}
+.wrapper span:nth-child(4) {
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.wrapper span:nth-child(5) {
+	left: 40%;
+	animation-delay: 1s;
+}
+.wrapper span:nth-child(6) {
+	left: 50%;
+	animation-delay: 7s;
+}
+.wrapper span:nth-child(7) {
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+}
+.wrapper span:nth-child(8) {
+	left: 70%;
+	animation-delay: 8s;
+}
+.wrapper span:nth-child(9) {
+	left: 80%;
+	animation-delay: 6s;
+	width: 90px;
+	height: 90px;
+}
+.wrapper span:nth-child(10) {
+	left: 90%;
+	animation-delay: 4s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	80% {
+		opacity: .7;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
